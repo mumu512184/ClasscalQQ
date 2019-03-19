@@ -7,9 +7,9 @@
 //
 
 #import "MMMessagesViewController.h"
-
+static NSString*cellId = @"cellId";
 @interface MMMessagesViewController ()
-
+@property (nonatomic, assign) int cellNum;
 @end
 
 @implementation MMMessagesViewController
@@ -17,34 +17,54 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+  
+}
+-(void)setupUI{
+    [super setupUI];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //注册cell
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellId];
+    //创建控件segMennt
+    NSArray*arr = [[NSArray alloc ] initWithObjects:@"分组",@"全部",nil];
+
+    UISegmentedControl*segment = [[UISegmentedControl alloc] initWithItems:arr];
+    segment.bounds = CGRectMake(0, 0, 65, 35);
+    segment.selectedSegmentIndex = 0;
+    //设置初始值
+    self.cellNum = 13;
+    [ segment addTarget:self action:@selector(clickSegment:) forControlEvents:UIControlEventValueChanged];
+   
+    self.navigationItem.titleView = segment;
 }
 
-#pragma mark - Table view data source
+-(void)clickSegment:(UISegmentedControl*)segment {
+    if (segment.selectedSegmentIndex == 0) {
+        self.cellNum = 13;
+    }else{
+        self.cellNum = 5;
+    }
+    [self.tableView reloadData];
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return self.cellNum;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId forIndexPath:indexPath];
+    cell.backgroundColor = UIColor.whiteColor;
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld",(long)indexPath.row ];
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

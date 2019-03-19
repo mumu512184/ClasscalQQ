@@ -17,7 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   
+    [self setupUI];
+}
+
+
+-(void)setupUI{
+    self.view.backgroundColor = [UIColor colorWithWhite:0.8 alpha:1];
 }
 
 #pragma mark - Table view data source
