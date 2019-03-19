@@ -20,6 +20,11 @@
 		AA63237B2240F443003D71C7 /* MMSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA63237A2240F443003D71C7 /* MMSettingsViewController.m */; };
 		AA63237E2240F45C003D71C7 /* MMMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA63237D2240F45C003D71C7 /* MMMessagesViewController.m */; };
 		AA6323812240F475003D71C7 /* MMContacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6323802240F475003D71C7 /* MMContacterViewController.m */; };
+		AA63238422413CA6003D71C7 /* addContact.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA63238322413CA6003D71C7 /* addContact.plist */; };
+		AA63238622413CE8003D71C7 /* functionQZone.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA63238522413CE8003D71C7 /* functionQZone.plist */; };
+		AA63238822413D09003D71C7 /* functionSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA63238722413D09003D71C7 /* functionSettings.plist */; };
+		AA63238A22413D10003D71C7 /* functionAbout.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA63238922413D10003D71C7 /* functionAbout.plist */; };
+		AA63238D22413DCA003D71C7 /* MMBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA63238C22413DCA003D71C7 /* MMBaseModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +54,12 @@
 		AA63237F2240F475003D71C7 /* MMContacterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMContacterViewController.h; sourceTree = "<group>"; };
 		AA6323802240F475003D71C7 /* MMContacterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMContacterViewController.m; sourceTree = "<group>"; };
 		AA6323822240F9B8003D71C7 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		AA63238322413CA6003D71C7 /* addContact.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = addContact.plist; sourceTree = "<group>"; };
+		AA63238522413CE8003D71C7 /* functionQZone.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = functionQZone.plist; sourceTree = "<group>"; };
+		AA63238722413D09003D71C7 /* functionSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = functionSettings.plist; sourceTree = "<group>"; };
+		AA63238922413D10003D71C7 /* functionAbout.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = functionAbout.plist; sourceTree = "<group>"; };
+		AA63238B22413DCA003D71C7 /* MMBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMBaseModel.h; sourceTree = "<group>"; };
+		AA63238C22413DCA003D71C7 /* MMBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMBaseModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +151,7 @@
 		AA63234D2240DE2A003D71C7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AA63238522413CE8003D71C7 /* functionQZone.plist */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,6 +193,8 @@
 		AA6323522240DE2B003D71C7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AA63238722413D09003D71C7 /* functionSettings.plist */,
+				AA63238922413D10003D71C7 /* functionAbout.plist */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -263,6 +277,7 @@
 		AA63235C2240DE2B003D71C7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AA63238322413CA6003D71C7 /* addContact.plist */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -307,6 +322,8 @@
 				AA6323712240EDB1003D71C7 /* tabBarViewControllers.plist */,
 				AA6323732240EFD2003D71C7 /* MMTabBarModel.h */,
 				AA6323742240EFD2003D71C7 /* MMTabBarModel.m */,
+				AA63238B22413DCA003D71C7 /* MMBaseModel.h */,
+				AA63238C22413DCA003D71C7 /* MMBaseModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -401,8 +418,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA63233C2240DCEB003D71C7 /* Assets.xcassets in Resources */,
+				AA63238822413D09003D71C7 /* functionSettings.plist in Resources */,
+				AA63238A22413D10003D71C7 /* functionAbout.plist in Resources */,
 				AA6323662240DF03003D71C7 /* Images.xcassets in Resources */,
+				AA63238622413CE8003D71C7 /* functionQZone.plist in Resources */,
 				AA6323722240EDB1003D71C7 /* tabBarViewControllers.plist in Resources */,
+				AA63238422413CA6003D71C7 /* addContact.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +443,7 @@
 				AA6323342240DCE8003D71C7 /* AppDelegate.m in Sources */,
 				AA6323752240EFD2003D71C7 /* MMTabBarModel.m in Sources */,
 				AA6323812240F475003D71C7 /* MMContacterViewController.m in Sources */,
+				AA63238D22413DCA003D71C7 /* MMBaseModel.m in Sources */,
 				AA63237B2240F443003D71C7 /* MMSettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

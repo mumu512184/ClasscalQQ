@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MMBaseViewController : UITableViewController
 -(void)setupUI;
+-(NSArray*)loadDataWithPath:(NSString*)stringPath;
 @end
 
 NS_ASSUME_NONNULL_END
