@@ -62,10 +62,10 @@
 		AA63238922413D10003D71C7 /* functionAbout.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = functionAbout.plist; sourceTree = "<group>"; };
 		AA63238B22413DCA003D71C7 /* MMBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMBaseModel.h; sourceTree = "<group>"; };
 		AA63238C22413DCA003D71C7 /* MMBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMBaseModel.m; sourceTree = "<group>"; };
-		AA6323E822431EF8003D71C7 /* MMSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMSliderViewController.h; path = "../../../../../../.Trash/MMslider-frame 上午9.03.35/ClasscalMMQQ/ClasscalMMQQ/classes/Tools/MMSlider-frame/MMSliderViewController.h"; sourceTree = "<group>"; };
 		AA6323E922431EF8003D71C7 /* MMSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSliderViewController.m; sourceTree = "<group>"; };
 		AA6323EA22431EF8003D71C7 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
 		AA6323EB22431EF8003D71C7 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		AA6323EE22432066003D71C7 /* MMSliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMSliderViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -371,7 +371,7 @@
 			children = (
 				AA6323EA22431EF8003D71C7 /* LeftViewController.h */,
 				AA6323EB22431EF8003D71C7 /* LeftViewController.m */,
-				AA6323E822431EF8003D71C7 /* MMSliderViewController.h */,
+				AA6323EE22432066003D71C7 /* MMSliderViewController.h */,
 				AA6323E922431EF8003D71C7 /* MMSliderViewController.m */,
 			);
 			path = "MMSlider-frame";
