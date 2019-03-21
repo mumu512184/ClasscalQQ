@@ -25,6 +25,8 @@
 		AA63238822413D09003D71C7 /* functionSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA63238722413D09003D71C7 /* functionSettings.plist */; };
 		AA63238A22413D10003D71C7 /* functionAbout.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA63238922413D10003D71C7 /* functionAbout.plist */; };
 		AA63238D22413DCA003D71C7 /* MMBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AA63238C22413DCA003D71C7 /* MMBaseModel.m */; };
+		AA6323E3224316D7003D71C7 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6323DF224316D7003D71C7 /* LeftViewController.m */; };
+		AA6323E7224318A0003D71C7 /* MMSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6323E5224318A0003D71C7 /* MMSliderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,10 @@
 		AA63238922413D10003D71C7 /* functionAbout.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = functionAbout.plist; sourceTree = "<group>"; };
 		AA63238B22413DCA003D71C7 /* MMBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMBaseModel.h; sourceTree = "<group>"; };
 		AA63238C22413DCA003D71C7 /* MMBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMBaseModel.m; sourceTree = "<group>"; };
+		AA6323DF224316D7003D71C7 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		AA6323E2224316D7003D71C7 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		AA6323E5224318A0003D71C7 /* MMSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSliderViewController.m; sourceTree = "<group>"; };
+		AA6323E6224318A0003D71C7 /* MMSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSliderViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,7 @@
 		AA6323492240DE2A003D71C7 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				AA6323DE224316D7003D71C7 /* MMSlider-frame */,
 				AA63234A2240DE2A003D71C7 /* Extensions(类扩展) */,
 				AA6323672240E14C003D71C7 /* PrefixHeader.pch */,
 				AA6323822240F9B8003D71C7 /* Header.h */,
@@ -359,6 +366,17 @@
 			name = Supply;
 			sourceTree = "<group>";
 		};
+		AA6323DE224316D7003D71C7 /* MMSlider-frame */ = {
+			isa = PBXGroup;
+			children = (
+				AA6323E2224316D7003D71C7 /* LeftViewController.h */,
+				AA6323DF224316D7003D71C7 /* LeftViewController.m */,
+				AA6323E6224318A0003D71C7 /* MMSliderViewController.h */,
+				AA6323E5224318A0003D71C7 /* MMSliderViewController.m */,
+			);
+			path = "MMSlider-frame";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -437,9 +455,11 @@
 				AA63236A2240E391003D71C7 /* MMTableBarController.m in Sources */,
 				AA6323702240E3F7003D71C7 /* MMNaviViewController.m in Sources */,
 				AA63236D2240E3C0003D71C7 /* MMBaseViewController.m in Sources */,
+				AA6323E7224318A0003D71C7 /* MMSliderViewController.m in Sources */,
 				AA63237E2240F45C003D71C7 /* MMMessagesViewController.m in Sources */,
 				AA6323782240F426003D71C7 /* MMQQZoneViewController.m in Sources */,
 				AA6323422240DCEB003D71C7 /* main.m in Sources */,
+				AA6323E3224316D7003D71C7 /* LeftViewController.m in Sources */,
 				AA6323342240DCE8003D71C7 /* AppDelegate.m in Sources */,
 				AA6323752240EFD2003D71C7 /* MMTabBarModel.m in Sources */,
 				AA6323812240F475003D71C7 /* MMContacterViewController.m in Sources */,

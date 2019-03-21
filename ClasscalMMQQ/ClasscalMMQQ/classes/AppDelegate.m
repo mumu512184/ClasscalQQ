@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "PrefixHeader.pch"
 #import "MMTableBarController.h"
+#import "MMSliderViewController.h"
+#import "LeftViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,8 +21,23 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:KSCREEBounds];
+   // 右边的控制器
     MMTableBarController*tabBarVc = [[MMTableBarController alloc]init];
-    self.window.rootViewController = tabBarVc;
+    
+   
+    
+   
+    //左边控制器
+    LeftViewController *leftVc = [[LeftViewController alloc]init];
+    
+    
+   //创建框架控制器
+    MMSliderViewController*sliderVc = [[MMSliderViewController alloc]initWithLeftViewController:leftVc withRightViewController:tabBarVc];
+    
+    
+    
+    
+    self.window.rootViewController =  sliderVc;
     
     
     [self.window makeKeyAndVisible];
